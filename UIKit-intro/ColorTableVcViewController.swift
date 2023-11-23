@@ -30,7 +30,7 @@ class ColorTableVcViewController: UIViewController {
 
 extension ColorTableVcViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.colors.count
+        colors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,7 +38,7 @@ extension ColorTableVcViewController: UITableViewDelegate, UITableViewDataSource
             return UITableViewCell()
         }
         
-        cell.backgroundColor = self.colors[indexPath.row]
+        cell.backgroundColor = colors[indexPath.row]
         return cell
     }
     
